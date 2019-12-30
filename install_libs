@@ -1,0 +1,43 @@
+#!/bin/sh
+#
+if [ -d $1; then
+	INS_DIR=$1
+else
+	INS_DIR=`pwd`/lib
+fi
+# copy libraries
+if [ -n "$INS_DIR" ]
+then
+	cd lib
+	for i in *.so.*
+	do
+#		echo $i
+		cp $i ${INS_DIR}
+		LIB=`expr $i : '\(lib.*\.so\)......'`
+#		echo $i " => " $LIB
+		if [ -f ${INS_DIR}/${LIB} ]
+		then
+			rm ${INS_DIR}/${LIB}
+		fi
+		ln -s ${INS_DIR}/$i ${INS_DIR}/${LIB}
+
+	done
+	for i in *.a.*
+	do
+#		echo $i
+		cp $i ${INS_DIR}
+		LIB=`expr $i : '\(lib.*\.a\)......'`
+#		echo $i " => " $LIB
+		if [ -f ${INS_DIR}/${LIB} ]
+		then
+			rm ${INS_DIR}/${LIB}
+		fi
+		ln -s ${INS_DIR}/$i ${INS_DIR}/${LIB}
+
+	done
+	ldconfig ${INS_DIR}
+else
+	echo "Neither /usr/local/lib nor /usr/lib exists"
+fi
+
+
