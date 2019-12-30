@@ -1,0 +1,340 @@
+\form#0:\begin{align*} 100 x_0 + 64 x_1 &\to \max,\\ 50 x_0 + 31 x_1 &\le 250,\\ -3 x_0 + 2 x_1 &\le 4,\\ x_0,\:x_1 &\in \mathbb{Z}_+. \end{align*}
+\form#1:$x_0$
+\form#2:$x_1$
+\form#3:$-\infty$
+\form#4:$G=(V,E)$
+\form#5:$v\in V$
+\form#6:$d_v$
+\form#7:$\sum_{v\in V} d_v = 0$
+\form#8:$e\in E\text{ is } u_e > 0$
+\form#9:$x_e > 0$
+\form#10:$f_e + c_e x_e$
+\form#11:$x_e=0$
+\form#12:$e=(i,j)$
+\form#13:$e_1=(i,j)\text{ and } e_2=(j,i)$
+\form#14:$u_e=3$
+\form#15:$f_e=1$
+\form#16:$c_e=0$
+\form#17:$u_e=4$
+\form#18:$f_e=2$
+\form#19:$x_e$
+\form#20:$e\in E$
+\form#21:$y_e=1,\text{ if product is shipped } (x_e > 0)\text{ through arc } e,\text{ and } y_e=0\text{ otherwise}$
+\form#22:\begin{align} \sum_{e\in E} (f_e y_e + c_e x_e) \to \min,& \tag{1.a} \\ \sum_{e\in E(V,v)} x_e - \sum_{e\in E(v,V)} x_e = d_v,&\quad v\in V,\tag{1.b}\\ 0\le x_e \le u_e y_e,&\quad e\in E,\tag{1.c}\\ y_e \in \{0,1\},&\quad e\in E.\tag{1.d} \end{align}
+\form#23:$y_e=0$
+\form#24:$y_e$
+\form#25:$-u_e$
+\form#26:\[ \begin{array}{*{3}{r@{\:}c@{\:}}l} 2x_0 &+& 5x_1 &+& x_2 &\le& 5,\\ x_0 &+& 2x_1 & & &\ge& 3,\\ x_0 && && &\ge& 0,\\ && x_1 && &\ge& 0,\\ &&&& x_2 &\ge& 0. \end{array}\tag{1} \]
+\form#27:$0\le -1$
+\form#28:$Ax\le b$
+\form#29:$y\ge 0\text{ such that } y^TA=0,\text{ and } y^Tb < 0$
+\form#30:\[ \max\{c^Tx:\; Ax\le b\} \]
+\form#31:$x^0,\;v\text{ such that } Ax^0\le b,\; Av\le 0,\text{ and } c^T v > 0$
+\form#32:\[ \{x(\lambda)=x^0 +\lambda v:\; \lambda\ge 0\} \]
+\form#33:$Ax(\lambda)\le b\;\forall\; \lambda\ge 0$
+\form#34:$c^Tx(\lambda)$
+\form#35:$\lambda$
+\form#36:$(x^0,v)$
+\form#37:$4x_0 + x_1 + 2x_2$
+\form#38:$c_e\; (e\in E)$
+\form#39:$c_e > 0\text{ and } k=1$
+\form#40:$k=1\text{ and all } d_v=2$
+\form#41:$x_e=1$
+\form#42:\begin{align*} \sum_{e\in E} c_e x_e &\to \min,\tag{1.a}\\ \sum_{e\in E(v,V)} x_e &\le d_v,\quad v\in V,\tag{1.b}\\ \sum_{e\in E(S,V\setminus S)} x_e &\ge k,\quad S\subset V,\; S\neq\emptyset,\tag{1.c}\\ x_e &\in \{0,1\},\quad e\in E.\tag{1.d} \end{align*}
+\form#43:$E(S,T)$
+\form#44:$S\subseteq V$
+\form#45:$T\subseteq V$
+\form#46:$\{e\in E:\; x_e = 1\}$
+\form#47:$\tilde{x}\in [0,1]^{E}$
+\form#48:$\tilde{S}\; (\emptyset\neq \tilde{S}\subset V)$
+\form#49:$\tilde{x}(S)\stackrel{\mathrm{def}}{=}\sum_{e\in E(\tilde{S},V\setminus \tilde{S})} \tilde{x}_e$
+\form#50:$\tilde{x}(S) < k$
+\form#51:$\sum_{e\in E(\tilde{S},V\setminus \tilde{S})} x_e \ge k$
+\form#52:$\tilde{x}$
+\form#53:$S\subset V$
+\form#54:$s,t\in V\text{ if } s\in S\text{ and } t\not\in S$
+\form#55:$p_v=1\text{ if } v\in\tilde{S}\text{, and } p_v=0\text{ if } v\in\ V\setminus\tilde{S}$
+\form#56:$\gamma_e=1\text{ if } e\in E(\tilde{S},V\setminus\tilde{S}),\text{ and } \gamma_e=0\text{ if } e\not\in E(\tilde{S},V\setminus\tilde{S})$
+\form#57:\[ \begin{aligned} \sum_{e\in E} \tilde{x}_e \gamma_e &\to \min,\\ p_w -p_v + \gamma_e &\ge 0,\\ p_v -p_w + \gamma_e &\ge 0, \quad e=(v,w)\in E,\\ p_s = 1,\; p_t &= 0,\\ p_v &\ge 0,\quad v\in V,\\ \gamma_e &\ge 0,\quad e\in E. \end{aligned}\tag{2} \]
+\form#58:$(p^*,\gamma^*)$
+\form#59:$\sum_{e\in E}\gamma^*_e \bar{x}_e < k$
+\form#60:\[ \sum_{e=(v,w)\in E:\; p^*_v \neq p^*_w} x_e \ge k. \]
+\form#61:$|V|-1\text{ LPs for a fixed } s\in V\text{ and all } t\in V\setminus s$
+\form#62:$p_0$
+\form#63:$p_1,\dots,p_{n-1}$
+\form#64:$\gamma_e$
+\form#65:$q_1,\dots,q_m$
+\form#66:$l_1,\dots,l_m$
+\form#67:$a=(a_1,\dots,a_m)^T$
+\form#68:$\sum_{i=1}^m a_i l_i \le L$
+\form#69:$a_1$
+\form#70:$l_1$
+\form#71:$a_2$
+\form#72:$l_2$
+\form#73:$a_m$
+\form#74:$l_m$
+\form#75:$a^j=(a_{1j},\dots,a_{mj})^T$
+\form#76:$j=1,\dots,n$
+\form#77:$x_j$
+\form#78:$a^j$
+\form#79:\begin{align*} \sum_{j=1}^n x_j &\to \min,\\ \sum_{j=1}^n a_{ij} x_j &\ge q_i,\quad i=1,\ldots,m,\tag{1}\\ x_j &\in \mathbb{Z}_+,\quad j=1,\ldots,n. \end{align*}
+\form#80:$\sum_{j=1}^n c_j x_j$
+\form#81:$c_j$
+\form#82:$a^1,\dots,a^k$
+\form#83:\begin{align*} \sum_{j=1}^k x_j &\to \min,\\ \sum_{j=1}^k a_{ij} x_j &\ge q_i,\quad i=1,\dots,m,\tag{2}\\ x_j &\ge 0,\quad j=1,\dots,k, *\end{align*}
+\form#84:$y^*$
+\form#85:\[ \sum_{i=1}^m a_{ij} y^*_i \le 1,\quad j=1,\dots,n,\tag{3} \]
+\form#86:\begin{align} \sum_{i=1}^m y^*_i z_i &\to \max,\notag\\ \sum_{i=1}^m l_i z_i &\le L,\tag{4}\\ z_i &\in \mathbb{Z}_+,\quad i=1,\dots,m.\notag \end{align}
+\form#87:$z^*$
+\form#88:$\sum_{i=0}^m y^*_i z^*_i \le 1$
+\form#89:$a^{k+1}=z^*$
+\form#90:$x_{k+1}$
+\form#91:$l_{\pi(1)} > l_{\pi(2)} >\dots > l_{\pi(m)}$
+\form#92:$b=q,\; I=(\pi(1),\dots,\pi(m)),\; k=0$
+\form#93:$I\neq\emptyset$
+\form#94:$k:=k+1,\; W=L,\; x_k=\infty$
+\form#95:$i\not\in I,\text{ set } a^k_i=0$
+\form#96:$i=1,\dots,|I|$
+\form#97:$a^k_{I[i]}=\left\lfloor\frac{W}{l_{I[i]}}\right\rfloor,\; W:=W-a^k_{I[i]}\cdot l_{I[i]}$
+\form#98:$x_k a^k_{I[i]} > b_{I[i]},\text{ set } x_k=\left\lceil\frac{b_{I[i]}}{a^k_{I[i]}}\right\rceil$
+\form#99:$b:=b-x_k a^k$
+\form#100:$b_s\le 0$
+\form#101:$l_1=45,\; l_2=36,\; l_3=31,\; l_4=14$
+\form#102:$q_1=97,\; q_2=610,\; q_3=395,\; q_4=211$
+\form#103:$b=(97,610,395,211),\; I=(1,2,3,4),\; k=0$
+\form#104:$W=100,\; x_1=\infty$
+\form#105:\begin{eqnarray*} a^1_1 &=& \left\lfloor\frac{100}{45}\right\rfloor =2,\quad W = 100 -2\cdot 45 = 10,\quad x_1=\left\lceil\frac{97}{2}\right\rceil=49;\\ a^1_2 &=& \left\lfloor\frac{10}{36}\right\rfloor=0;\quad a^1_3 = \left\lfloor\frac{10}{31}\right\rfloor=0;\quad a^1_4 = \left\lfloor\frac{10}{14}\right\rfloor=0. \end{eqnarray*}
+\form#106:$b=(97,610,395,211)-49(2,0,0,0)=(-1,610,395,211),\quad I=(2,3,4)$
+\form#107:$W=100,\; x_2=\infty$
+\form#108:\begin{eqnarray*} a^2_1 &=& 0;\\ a^2_2 &=& \left\lfloor\frac{100}{36}\right\rfloor=2;\quad W = 100 -2\cdot 36 = 28,\quad x_2=\left\lceil\frac{610}{2}\right\rceil=305;\\ a^2_3 &=& \left\lfloor\frac{28}{31}\right\rfloor=0;\\ a^2_4 &=& \left\lfloor\frac{28}{14}\right\rfloor=2,\quad W = 28 -2\cdot 14 = 0,\quad x_2=\left\lceil\frac{211}{2}\right\rceil=106. \end{eqnarray*}
+\form#109:$b=(-1,610,395,211)-106(0,2,0,2)=(-1,398,395,-1),\quad I=(2,3)$
+\form#110:$W=100,\; x_3=\infty$
+\form#111:\begin{eqnarray*} a^3_1 &=& 0;\\ a^3_2 &=& \left\lfloor\frac{100}{36}\right\rfloor=2;\quad W = 100 -2\cdot 36 = 28,\quad x_3=\left\lceil\frac{398}{2}\right\rceil=199;\\ a^3_3 &=& \left\lfloor\frac{28}{31}\right\rfloor=0;\quad a^3_4 = 0. *\end{eqnarray*}
+\form#112:$b=(-1,398,395,-1)-199(0,2,0,0)=(-1,0,395,-1),\quad I=(3)$
+\form#113:$W=100,\; x_4=\infty$
+\form#114:\begin{eqnarray*} a^4_1 &=& 0;\quad a^4_2 = 0;\\ a^4_3 &=& \left\lfloor\frac{100}{31}\right\rfloor=3;\quad W = 100 -3\cdot 31 = 7,\quad x_4=\left\lceil\frac{395}{3}\right\rceil=132;\\ a^4_4 = 0. \end{eqnarray*}
+\form#115:$b=(-1,0,395,-1)-132(0,0,3,0)=(-1,0,-1,-1),\quad I=\emptyset$
+\form#116:$\infty$
+\form#117:\[\displaystyle \max\left\{\sum_{j=1}^n c_j x_j:\: \sum_{j=1}^n c_j x_j\le b,\; x\in \mathbb{Z}^n\right\}\]
+\form#118:$p_j$
+\form#119:$r_j$
+\form#120:$d_j$
+\form#121:$w_j$
+\form#122:$U_j=0$
+\form#123:$U_j=1$
+\form#124:$\sum_{j=1}^n w_j U_j$
+\form#125:$\sum_{j=1}^n w_j(1-U_j)$
+\form#126:$1|r_j,d_j|\sum w_jU_j$
+\form#127:\begin{align*} \sum_{j=1}^n w_j x_j \to \max,\tag{1.a}\\ r_j \le s_j \le d_j -p_j\,, &\quad j=1,\dots,n,\tag{1.b}\\ s_j - s_i - My_{ij} \ge -M+p_i,&\quad i,j=1,\dots,n,\; i\neq j,\tag{1.c}\\ y_{ij} + y_{ji} - x_j \le 0,&\quad i,j=1,\dots,n,\; i\neq j,\tag{1.d}\\ x_i + x_j -y_{ij} - y_{ji}\le 1,&\quad i=1,\dots,j-1,\; j=2,\dots,n,\tag{1.f}\\ x_j \in \{0,1\},&\quad j=1,\dots,n,\tag{1.g}\\ y_{ij} \in \{0,1\},&\quad i,j=1,\dots,n,\; i\neq j,\tag{1.h} \end{align*}
+\form#128:$s_j$
+\form#129:$x_j=1$
+\form#130:$x_j=0$
+\form#131:$y_{ij}=1$
+\form#132:$y_{ij}=0$
+\form#133:\[M=\max_{1\le j\le n} d_j - \min_{1\le j\le n} r_j\,.\]
+\form#134:\[s_j \ge s_i + p_i,\]
+\form#135:$x_i=0\text{ or }x_j=0$
+\form#136:$y_{ij}$
+\form#137:$y_{ji}$
+\form#138:$x_i=x_j=1$
+\form#139:$y_{ij}+y_{ji}=1$
+\form#140:$(s^*,x^*,y^*)$
+\form#141:$x^*_j=1,\; s^*_j=r_j\text{ for } j=1,\dots,n$
+\form#142:$y^*_{ij}=1/2$
+\form#143:\[s_j - s_i - My_{ij} \ge -M+p_i\]
+\form#144:\[s_j \ge s_i + p_i\,.\]
+\form#145:\[s_i - s_j - My_{ji} \ge -M+p_j\]
+\form#146:\[s_i \ge s_j + p_j\,.\]
+\form#147:\begin{align*} \sum_{j=1}^n w_j\, x_j &\to \max,\tag{2.a}\\ r_j \:\le\: s_j &\le d_j-p_j,\quad j=1,\dots,n,\tag{2.b}\\ \sum_{j=1}^n p_j\, x_j &\le \max_{1\le j\le n} d_j - \min_{1\le j\le n} r_j,\tag{2.c}\\ x_j &\in \{0,1\},\quad j=1,\dots,n,\tag{2.d} \end{align*}
+\form#148:\[ \sum_{k\in S_{ij}} p^{ij}_k x_k \le d_j - r_i\,,\quad i,j\in \{1,\dots,n\:\: r_i < d_j\},\tag{2.e} \]
+\form#149:\[p^{ij}_k = \min\{d_j-r_i,p_k-\max\{\max\{0,r_i-r_k\},\max\{0,d_k-d_j\}\}\}\]
+\form#150:$S_{ij}=\{k:\; p^{ij}_k > 0,\; 1\le k\le n\}$
+\form#151:$p^{ij}_k$
+\form#152:$[r_i,d_j]$
+\form#153:$r_j,d_j,p_j$
+\form#154:$s_{j1} + p_{j1} \le s_{j2}$
+\form#155:$x_{j1}+x_{j2}\le 1$
+\form#156:\[ b1\le \sum_{i=0}^{sz-1} dpVal[i]\cdot x[ipCol[i]] \le b2. \]
+\form#157:\[ x[n+j2] - x[n+j1] \ge m_ipP[j1]\quad (s_{j1} + p_{j1} \le s_{j2}), \]
+\form#158:\[ x[n+j1] + x[n+j2] \le 1\quad (x_{j1} + x_{j2} \le 1), \]
+\form#159:$x\in [0,1]^n$
+\form#160:$r_i$
+\form#161:$p_{ij}$
+\form#162:$c_{ij}$
+\form#163:$l_j$
+\form#164:$m\times n\text{-matrix } X=\{x_{ij}\}$
+\form#165:$x_{ij}=1$
+\form#166:\begin{align*} \sum_{i=1}^m\sum_{j=1}^n c_{ij}\, x_{ij} &\to \min,\tag{1.a}\\ \sum_{j=1}^n x_{ij} &= 1,\quad i=1,\ldots,m,\tag{1.b}\\ \sum_{i=1}^m p_{ij}x_{ij} &\le l_j,\quad j=1,\ldots,n,\tag{1.c}\\ x_{ij} &\in \{0,1\},\quad i=1,\ldots,m;\; j=1,\ldots,n.\tag{1.d} \end{align*}
+\form#167:\[ X_j=\{z\in \{0,1\}^m:\; \sum_{i=1}^m p_{ij} z_i \le l_j\}, \]
+\form#168:\begin{align*} \sum_{j=1}^n \sum_{a\in X_j}\left(\sum_{i=1}^m c_{ij}a_i\right) \lambda^j_a &\to \min,\tag{2.a}\\ \sum_{j=1}^n \sum_{a\in X_j} a \lambda^j_a &= \mathrm{e},\tag{2.b}\\ \sum_{a\in X_j} \lambda^j_a &\le 1,\quad j=1,\ldots,n,\tag{2.c}\\ \lambda^j_a \in \{0,1\},\; a &\in X_j,\quad j=1,\ldots,n.\tag{2.d} \end{align*}
+\form#169:$X_j$
+\form#170:$\Gamma$
+\form#171:$\gamma_{ij}$
+\form#172:$j=1,\dots,n,\text{ let } S_j\subseteq X_j$
+\form#173:$s_i\; (i=1,\dots,m)$
+\form#174:\begin{align*} -\sum_{j=1}^n \sum_{a\in S_j} \left(\sum_{i=1}^m c_{ij}a_i\right) \lambda^j_a - M \sum_{i=1}^m s_i &\to \max,\tag{3.a}\\ \sum_{j=1}^n \sum_{a\in S_j} a \lambda^j_a + s &= \mathrm{e},\tag{3.b}\\ \sum_{a\in S_j} \lambda^j_a &\le 1,\quad j=1,\ldots,n,\tag{3.c}\\ \lambda^j_a \ge 0,\; a &\in S_j,\quad j=1,\ldots,n,\tag{3.d}\\ s_i &\ge 0,\quad i=1,\dots,m,\tag{3.e} \end{align*}
+\form#175:\[ M = \sum_{i=1}^m \max_{1\le j\le n} c_{ij}. \]
+\form#176:$S_j=\emptyset$
+\form#177:$s_i$
+\form#178:$\lambda^j_a$
+\form#179:$\lambda^j_a=0$
+\form#180:$\lambda^j_a=1$
+\form#181:$a_i=1$
+\form#182:$\Gamma=[\gamma_{ij}]_{m\times n}$
+\form#183:$\gamma_{ij}=1$
+\form#184:\[ x_{ij} = \sum_{a\in S_j} \lambda^j_a a_i \]
+\form#185:$\lambda^{\bar{j}}_a$
+\form#186:\[ \delta_j = \left(1-\sum_{a\in S_j} \lambda^j_a\right)^2 + \sum_{a\in S_j} \left(\lambda^j_a\right)^2. \]
+\form#187:$x_{i\bar{j}}\; (i=1,\ldots,m)$
+\form#188:$x_{\bar{i}\bar{j}}$
+\form#189:$\bar{i}\text{ and }\bar{j}$
+\form#190:$x_{\bar{i}\bar{j}}=1$
+\form#191:$\gamma_{\bar{i}\bar{j}}=1$
+\form#192:$\lambda^j_a\text{ such that } j\neq \bar{j}\text{ and }a_i=1$
+\form#193:$x_{\bar{i}\bar{j}}=0$
+\form#194:$\gamma_{\bar{i}\bar{j}}=2$
+\form#195:$\lambda^{\bar{j}}_a\text{ with }a_i=1$
+\form#196:$y\in\mathbb{R}^{m+n}$
+\form#197:\[ G_j=\{i:\; \gamma_{ij}=0\}\quad\text{and}\quad H_j =\{i:\; \gamma_{ij}=1\}. \]
+\form#198:$j=1,\ldots,n$
+\form#199:\begin{align*} \sum_{i\in G_j} (-c_{ij}-y_i) z_i &\to \max,\\ \sum_{i\in G_j} p_{ij} z_i \le l_j &- \sum_{i\in H_j} p_{ij},\tag{4}\\ z_i \in \{0,1\},\quad &i\in G_j\,. \end{align*}
+\form#200:$z^*\in\{0,1\}^{G_j}$
+\form#201:\[ \sum_{i\in G_j} (-c_{ij}-y_i) z^*_i + \sum_{i\in H_j} (-c_{ij}-y_i) > y_{m+j}, \]
+\form#202:$S_j$
+\form#203:$(z^*,\mathrm{e}_j)^T\in\{0,1\}^{m+n}$
+\form#204:$-\sum_{i=1}^m c_{ij} a_i$
+\form#205:\[ \max\left\{\sum_{j=1}^n c_j x_j:\; \sum_{j=1}^n a_j x_j \le b,\; x\in \{0,1\}^n\right\} \]
+\form#206:$D=[d_{ij}]_{n\times n}$
+\form#207:$d_{ij}$
+\form#208:$x_{ij}\text{ with } x_{ij}=1$
+\form#209:\begin{align*} \sum_{i=1}^n \sum_{j=1}^n d_{ij} x_{ij} &\to \min\tag{1.a}\\ \sum_{j=1}^n x_{ij} &= 2,\quad i=1,\dots,n,\tag{1.b}\\ \sum_{i,j\in S} x_{ij} &\le |S|-1,\quad \emptyset\neq S\subset V,\tag{1.c}\\ x_{ij} &\in \{0,1\},\quad i,j=1,\dots,n.\tag{1.d} \end{align*}
+\form#210:$\alpha=4\text{ and } \beta=10$
+\form#211:$x^{(1)}$
+\form#212:\begin{align*} x^{(1)}_{1,2}=x^{(1)}_{2,3}=x^{(1)}_{3,1}=x^{(1)}_{4,5}=x^{(1)}_{5,6}=x^{(1)}_{6,4} &=1,\\ x^{(1)}_{1,4}=x^{(1)}_{2,5}=x^{(1)}_{3,6} &=0. \end{align*}
+\form#213:\[ 1\to 2\to 3 \to 1\quad\text{and}\quad 4\to 5\to 6\to 1 \]
+\form#214:$S_1=\{1,2,3\}\text{ and } S_2=\{4,5,6\}$
+\form#215:$x_{ij}$
+\form#216:$\displaystyle D=1 + \max_{1\le i,j\le n} d_{ij}\text{ and } c_{ij}=D-d_{ij}$
+\form#217:$\displaystyle \sum_{i=1}^n\sum_{j=1}^n x_{ij} = n$
+\form#218:\[ \sum_{i=1}^n\sum_{j=1}^n c_{ij}x_{ij} = D\,n - \sum_{i=1}^n\sum_{j=1}^n d_{ij}x_{ij}. \]
+\form#219:\begin{align*} \sum_{i=1}^n \sum_{j=1}^n c_{i,j} x_{ij} &\to \max\tag{2.a}\\ \sum_{j=1}^n x_{ij} &\le 2,\quad i=1,\dots,n,\tag{2.b}\\ \sum_{i,j\in S} x_{ij} &\le |S|-1,\quad \emptyset\neq S\subset V,\tag{2.c}\\ x_{ij} &\in \{0,1\},\quad i,j=1,\dots,n.\tag{2.d} \end{align*}
+\form#220:\begin{align*} \sum_{(i,j)\in E} c_{i,j} x_{ij} &\to \max\tag{3.a}\\ \sum_{(i,j)\in E(i,V)} x_{ij} &\le 2,\quad i=1,\dots,n,\tag{3.b}\\ \sum_{(i,j)\in E(S,S)} x_{ij} &\le |S|-1,\quad \emptyset\neq S\subset V,\tag{3.c}\\ x_{ij} &\in \{0,1\},\quad (i,j)\in E.\tag{3.d} \end{align*}
+\form#221:$x_{ij}\text{ for } (i,j)\not\in E$
+\form#222:\[\tag{4} \sum_{(i,j)\in E} x_{ij} = n, \]
+\form#223:\[\tag{5} \sum_{(i,j)\in E(S,V\setminus S)} x_{ij} \ge 2,\quad \emptyset\neq S\subset V. \]
+\form#224:\[ \sum_{(i,j)\in E(\tilde{S},V\setminus \tilde{S})} \tilde{x}_{ij} \ge 2, \]
+\form#225:$S=\tilde{S}$
+\form#226:$S=V\setminus\tilde{S}$
+\form#227:$\tilde{S}$
+\form#228:$\tilde{x}(\tilde{S})=\sum_{(i,j)\in E(\tilde{S},V\setminus \tilde{S})} \tilde{x}_{ij}$
+\form#229:$\tilde{x}(\tilde{S}) < 2$
+\form#230:$\sum_{(i,j)\in E(\tilde{S},V\setminus \tilde{S})} x_{ij} \ge 2$
+\form#231:$(G,\tilde{x})$
+\form#232:$(S,V\setminus S)$
+\form#233:$T_{GH}=(V,\tilde{E})$
+\form#234:$e\in\tilde{E}$
+\form#235:$e\in \tilde{E}$
+\form#236:$f_e$
+\form#237:$s,t\in V$
+\form#238:$T_{GH}$
+\form#239:$V\setminus S$
+\form#240:$x^{(2)}$
+\form#241:\begin{align*} & x^{(2)}_{1,2}=x^{(2)}_{2,3}=x^{(2)}_{3,1}=x^{(2)}_{4,5}= x^{(2)}_{5,6}=x^{(2)}_{6,4}=\frac{1}{2},\\ & x^{(2)}_{1,4}=x^{(2)}_{2,5}=x^{(2)}_{3,6}=1. \end{align*}
+\form#242:$\alpha=\beta=0$
+\form#243:\[ (1,2),\;(2,3),\; (3,1),\; (1,2),\;(2,3),\; (3,1), \]
+\form#244:\[\tag{6} x_{1,2}+x_{2,3}+x_{3,1}+x_{1,4}+x_{2,5}+x_{3,6} \le 4, \]
+\form#245:$H\subseteq V\text{ and } T_i\subseteq V,\; i=1,\dots,k$
+\form#246:\[\tag{7} \begin{aligned} |H\cap T_i|\ge 1,\; |T_i\setminus H|\ge 1,\quad i=1,\dots,k,\\ T_i\cap T_j =\emptyset,\quad j=i+1,\dots,k;\; i=1,\dots,k-1, \end{aligned} \]
+\form#247:$(H,T_1,\dots,T_k)$
+\form#248:$T_i$
+\form#249:$\sum_{(i,j)\in E(S,S)} x_{ij}$
+\form#250:\[\tag{8} x(H) + \sum_{i=1}^k x(T_i)\le |H| + \sum_{i=1}^k (|T_i|-2) + \left\lfloor\frac{k}{2}\right\rfloor \]
+\form#251:\begin{align*} 2 x(H) &+ 2 \sum_{i=1}^k x(T_i) \:\le\: x(H,V) + \sum_{i=1}^k \left(x(T_i) + x(T_i\cap H) + x(T_i\setminus H)\right)\\ &\le 2\,|H| + \sum_{i=1}^k \left((|T_i|-1) + (|T_i\cap H|-1) + (|T_i\setminus H|-1)\right)\\ &= 2\,|H| + 2 \sum_{i=1}^k (|T_i|-2) + k. \end{align*}
+\form#252:\[ |H\cap T_i|=1,\; |T_i\setminus H|=1,\quad i=1,\dots,k. \]
+\form#253:$x\in [0,1]^E$
+\form#254:\begin{align*} V^*(x) &= V \cup \{v_e: e\in E\},\\ E^*(x) &= \{(v,v_e),(v_e,w): e=(v,w) \in E,\; x(e) > 0\},\\ u(v,v_e) &= x(e),\; u(v_e,w) = 1-x(e),\quad e=(v,w)\in E. \end{align*}
+\form#255:\[ O = \{v_e: e \in E\} \cup \{w \in V:\; |\{(v_e,w): e \in E\}| \text{ --- odd}\}, \]
+\form#256:$(G^*(x),u)$
+\form#257:$(S,V^*(x)\setminus S)$
+\form#258:$|S\cap O|$
+\form#259:$(H;T_1,\dots,T_{2K+1})$
+\form#260:$S \cap V$
+\form#261:$(v_e,w)\in E(S,V^*(x)\setminus S)$
+\form#262:\[\tag{9} \sum_{i=1}^h x(H_i) + \sum_{j=1}^t x(T_j) \le \beta, \]
+\form#263:$H_1,\dots,H_h\text{ and } T_1,\dots,T_t$
+\form#264:$O(n^2)$
+\form#265:$H_i$
+\form#266:$T_j$
+\form#267:$\sum_{i=1}^n\sum_{j=1}^n \alpha_{ij} x_{ij}\le\beta$
+\form#268:$\tt{m_pPool[hd].b} = \beta$
+\form#269:$\alpha_{ij}$
+\form#270:$x_{vw}$
+\form#271:$\tilde{x}_{ij}$
+\form#272:$i\in S$
+\form#273:\begin{align*} \sum_{e\in E(S,S)} x_e &\le |S|-1,\\ \sum_{e\in E(V\setminus S,V\setminus S)} x_e &\le |V\setminus S|-1. \end{align*}
+\form#274:$j,\; x_j \ge 0,\; \sum_{j=1}^n x_j=1$
+\form#275:$R_j$
+\form#276:\[ R =\sum_{i=1}^n x_j R_j. \]
+\form#277:\[ E(R) = \sum_{j=1}^n x_j E(R_j), \]
+\form#278:$E(R_j)$
+\form#279:\begin{align*} \mathrm{var}(R) &= E((R-E(R))^2) = E((\sum_{j=1}^n x_j(R_j-E(R_j)))^2)\\ &= E((\sum_{j=1}^n x_j \bar{R}_j)^2). \end{align*}
+\form#280:$\bar{R}_j= R_j-E(R_j)$
+\form#281:\begin{align*} E((\sum_{j=1}^n x_j \bar{R}_j)^2) &\to \min,\\ \sum_{j=1}^n x_j &= 1,\\ \sum_{j=1}^n E(R_j) x_j &\ge V,\\ x_j &\ge 0,\quad j=1,\ldots,n. \end{align*}
+\form#282:\[ E_1(R_j) = \frac{1}{T}\sum_{t=1}^T R_{jt}.\qquad\qquad (1)\]
+\form#283:\[ E_2(R_j) = \frac{\sum_{t=1}^T p^{T-t}R_{jt}}{\sum_{t=1}^T p^{T-t}},\qquad\qquad (2)\]
+\form#284:$0 < p < 1$
+\form#285:\[E_3(R_j) = \exp\left(\frac{\sum_{t=1}^T p^{T-t}\log R_{jt}}{\sum_{t=1}^T p^{T-t}}\right).\qquad\qquad (3) \]
+\form#286:\[\tag{4} \begin{aligned} E_2\left(\left(\sum_{j=1}^n x_j \bar{R}_j\right)^2\right) &\to \min,\\ \sum_{j=1}^n x_j &= 1,\\ \sum_{j=1}^n E_3(R_j) x_j &\ge V,\\ x_j &\ge 0,\quad j=1,\dots,n. \end{aligned} \]
+\form#287:\[ p_t = \frac{p^{T-t}}{\sum_{\tau=1}^T p^{T-\tau}},\quad t=1,\dots,T, \]
+\form#288:\[ \hat{R}_{jt} = R_{jt} - \sum_{\tau=1}^T p_{\tau} R_{j\tau},\quad j=1,\dots,n,\; t=1,\dots,T, \]
+\form#289:\[ E_2\left(\left(\sum_{j=1}^n x_j \bar{R}_j\right)^2\right) = \sum_{t=1}^T p_t\left(\sum_{j=1}^n x_j\hat{R}_{jt}\right)^2, \]
+\form#290:$E_3(R_j)$
+\form#291:$\mu_j$
+\form#292:\[ y_t = \sqrt{p_t}\sum_{j=1}^n \hat{R}_{jt} x_j,\quad t=1,\dots,T, \]
+\form#293:\begin{align*} \sum_{t=1}^T y_t^2 &\to \min,\\ \sum_{j=1}^n x_j &= 1,\\ \sqrt{p_t} \sum_{j=1}^n \hat{R}_{jt} x_j &= y_t,\quad t=1,\dots,T,\tag{$5$}\\ \sum_{j=1}^n \mu_j x_j &\ge V,\\ x_j &\ge 0,\quad j=1,\dots,n. \end{align*}
+\form#294:\begin{align*} r &\to \min,\tag{$6$}\\ \sum_{j=1}^n x_j &= 1,\tag{$7$}\\ \sqrt{p_t} \sum_{j=1}^n \hat{R}_{jt} x_j &= y_t,\quad t=1,\dots,T,\tag{$8$}\\ \sum_{j=1}^n \mu_j x_j &\ge V,\tag{$9$}\\ \|y\| &\le r,\tag{$10$}\\ x_j &\ge 0,\quad j=1,\dots,n.\tag{$11$} \end{align*}
+\form#295:$v_j\; (j=1,\dots,n)$
+\form#296:$v_j=1$
+\form#297:$x_j > 0$
+\form#298:$v_j=0$
+\form#299:\begin{align*} q_1 \le \sum_{j=1}^n v_j &\le q_2,\tag{$12$}\\ l_j v_j \le x_j &\le v_j,\quad j=1,\dots,n.\tag{$13$} \end{align*}
+\form#300:$\frac{p^{T-t}}{\sum_{t=1}^T p^{T-t}},\; t=1,\dots,T$
+\form#301:$p_t$
+\form#302:$\hat{R}_{jt}$
+\form#303:\begin{align*} & c^Tx \to \max,\\ & b_1 \le Ax \le b_2,\\ & l \le x \le u,\\ & x_i\in\mathbb{Z}\quad\forall\; i\in I, \end{align*}
+\form#304:$j$
+\form#305:$\lambda^{\mathrm{down}}_j$
+\form#306:$\lambda^{\mathrm{up}}_j$
+\form#307:$\lambda_j$
+\form#308:$\lambda^{\mathrm{down}}_j\text{ and } \lambda^{\mathrm{up}}_j$
+\form#309:$\lambda_j=\lambda^{\mathrm{down}}_j \cdot \lambda^{\mathrm{up}}_j$
+\form#310:$\lambda_j=\min{\lambda^{\mathrm{down}}_j,\lambda^{\mathrm{up}}_j}$
+\form#311:$j^*$
+\form#312:$X =\{(y,s)\in \{0,1\}^N\times R^2_+: \sum_{j\in N} a_j y_j - s_1 + s_2\le b\}$
+\form#313:$a_j > 0\text{ for }j\in N$
+\form#314:$\sum_{j\in C} a_j = b + \lambda$
+\form#315:$\bar{a} > \lambda > 0$
+\form#316:$\bar{a} = \max_{j\in C} a_j$
+\form#317:$E(C) = C \cup \{j\in N\setminus C: a_j > \bar{a}\}$
+\form#318:$\sum_{j\in E(C)} \min(a_j,\lambda) y_j - s_1 \le -lambda + \sum{j\in C} \min(a_j,\lambda)$
+\form#319:$\mathrm{conv}(X)$
+\form#320:$\sum_{j \in S} x_j$
+\form#321:\begin{align*} \sum_{j\in J} x_j - \sum_{j\in S\setminus J} x_j \le |J|-1,\quad \forall\; J\subseteq S,\; |J|\text{ is even (odd)}. \end{align*}
+\form#322:$z_i \le (\ge) a_jx_j +b,\quad z_i\in\mathbb{R},\; x_j\in \{0,1\}$
+\form#323:$\sum_{i\in I} a_i x_i + a_j x_j \le a_j,\quad j\not\in I, x_j\in\{0,1\},\; x_i\in\{0,1\}\;\forall\: i\in I$
+\form#324:$\sum_{i\in I} a_i x_i \le b,\quad x_i\in\{0,1\}\;\forall\: i\in I$
+\form#325:$\sum_{i\in I} a_i x_i + \sum_{j\in J} q_j z_j \le b,\quad x_i\in\{0,1\}\;\forall\: i\in I$
+\form#326:$\sum_{i\in I} x_i \le 1,\quad x_i\in\{0,1\}\;\forall\: i\in I$
+\form#327:$\sum_{i\in I} x_i \le b,\quad x_i\in \{0,1\}\;\forall\: i\in I$
+\form#328:$\sum_{i\in I} x_i \ge 1,\quad x_i\in\{0,1\}\;\forall\: i\in I$
+\form#329:$\sum_{i\in I} x_i \le k,\quad x_i\in\{0,1\}\;\forall\: i\in I$
+\form#330:$\sum_{i\in I} z_i \le (=) 1,\quad z_i \ge 0\;\forall\: i\in I \text{ and only one } z_i \text{ takes non-zero value} $
+\form#331:$\sum_{i\in I} z_i \le (=) 1,\quad z_i \ge 0\;\forall\: i\in I,\text{ and if } z_i> 0,\: z_j>0, \text{ then } |i-j| = 1$
+\form#332:$\sum_{i\in I} a_i z_i \le (=) b,\quad 0\le z_i \le \alpha_ix_i +\beta_i \text{ with } x_i\in \{0,1\},\; i\in I$
+\form#333:$\sum_{i\in I} a_i z_i \le (=) b,\quad 0\le z_i \le a_ix_i +b_i \text{ with } x_i\in\{0,1\},\; i\in J\subset I$
+\form#334:$x_i=a\; \Rightarrow\; x_j=b,\; (a,b \in \{0,1\}$
+\form#335:\begin{align*} & c^Tx \to \max,\\ & b_1 \le Ax \le b_2,\\ & l \le x \le u, \end{align*}
+\form#336:$a_1,a_2,\dots,a_m$
+\form#337:$i_1,i_2,\ldots,i_n$
+\form#338:$a_{i_1}\ge a_{i_2}\ge\dots\ge a_{i_n}$
+\form#339:$a_{i_1}\le a_{i_2}\le\dots\le a_{i_n}$
