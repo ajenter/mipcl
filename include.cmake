@@ -24,3 +24,12 @@ else()
         IMPORTED_LOCATION ${MIPCL_DLL}
         INTERFACE_INCLUDE_DIRECTORIES ${MIPCL_INCLUDE_DIR})
 endif()
+
+function(installMipclDll dependingTarget)
+    if(WIN32)
+        add_custom_command(TARGET ${dependingTarget} POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E copy_if_different
+            ${MIPCL_DLL}
+            $<TARGET_FILE_DIR:${dependingTarget}>)
+    endif()
+endfunction()
